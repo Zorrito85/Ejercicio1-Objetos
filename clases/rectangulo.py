@@ -1,9 +1,9 @@
-from clases.figura import figura
-class rectangulo:
+from clases.figura import figuras
+class rectangulo(figuras):
     def __init__(self, base, altura, color):
         self.base = base
         self.altura = altura
-        self.color = color
+        super().__init__(color)
         
 
     def str__(self):
